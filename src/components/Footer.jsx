@@ -22,7 +22,7 @@ const Footer = () => {
               Snap into Tech. Premium gaming and tech accessories for everyone. Level up your setup today.
             </p>
             <div className="flex space-x-4 pt-2">
-              <a href="#" className="text-brand-muted hover:text-brand-accent transition-colors"><FaFacebook size={24} /></a>
+              <a href="https://www.facebook.com/profile.php?id=61589219863220" target="_blank" rel="noopener noreferrer" className="text-brand-muted hover:text-brand-accent transition-colors"><FaFacebook size={24} /></a>
               <a href="#" className="text-brand-muted hover:text-brand-accent transition-colors"><FaInstagram size={24} /></a>
               <a href="#" className="text-brand-muted hover:text-brand-accent transition-colors"><FaTiktok size={24} /></a>
             </div>

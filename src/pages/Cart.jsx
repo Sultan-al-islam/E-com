@@ -72,7 +72,7 @@ const Cart = () => {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-6">
+                <div className="flex flex-wrap justify-center sm:justify-end items-center gap-4 sm:gap-6 w-full sm:w-auto mt-2 sm:mt-0">
                   <div className="flex items-center bg-brand-bg rounded-md border border-brand-accent/20">
                     <button onClick={() => updateQuantity(item.id, item.quantity - 1)} className="w-8 h-8 flex items-center justify-center text-brand-text hover:text-brand-accent"><FiMinus size={14}/></button>
                     <span className="w-8 text-center text-brand-text text-sm font-medium">{item.quantity}</span>

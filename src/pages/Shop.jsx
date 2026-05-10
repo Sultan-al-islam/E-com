@@ -67,7 +67,7 @@ const Shop = () => {
             {initialSearch ? `Search Results for "${initialSearch}"` : 'Shop'}
           </h1>
           
-          <div className="flex items-center gap-4 w-full md:w-auto justify-between md:justify-end">
+          <div className="flex flex-wrap items-center gap-4 w-full md:w-auto justify-between md:justify-end">
             <button 
               onClick={() => setShowFilters(!showFilters)}
               className="md:hidden flex items-center gap-2 text-brand-text bg-brand-card px-4 py-2 rounded-md"
