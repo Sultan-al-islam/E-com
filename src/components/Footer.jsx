@@ -58,7 +58,7 @@ const Footer = () => {
             <ul className="space-y-3 text-sm text-brand-muted">
               <li>Dhaka, Bangladesh</li>
               <li>support@snapptek.com</li>
-              <li>+880 1234-567890</li>
+              <li>+880 1621-987183</li>
             </ul>
           </div>
           
@@ -75,7 +75,7 @@ const Footer = () => {
 
       {/* Floating WhatsApp Button */}
       <a
-        href="https://wa.me/YOUR_NUMBER"
+        href="https://wa.me/8801621987183"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(37,211,102,0.4)] hover:scale-110 transition-transform duration-300"

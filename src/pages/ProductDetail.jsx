@@ -133,7 +133,7 @@ const ProductDetail = () => {
                 Buy Now
               </button>
               <a 
-                href={`https://wa.me/1234567890?text=${whatsappMsg}`}
+                href={`https://wa.me/8801621987183?text=${whatsappMsg}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 flex items-center justify-center bg-[#25D366] text-white rounded-md hover:scale-105 transition-transform"

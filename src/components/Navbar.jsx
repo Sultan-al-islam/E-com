@@ -86,7 +86,7 @@ const Navbar = () => {
               )}
             </Link>
 
-            <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="text-brand-text hover:text-[#25D366] transition-colors">
+            <a href="https://wa.me/8801621987183" target="_blank" rel="noopener noreferrer" className="text-brand-text hover:text-[#25D366] transition-colors">
               <FaWhatsapp size={22} />
             </a>
           </div>
@@ -142,7 +142,7 @@ const Navbar = () => {
               </NavLink>
             ))}
             <a
-              href="https://wa.me/1234567890"
+              href="https://wa.me/8801621987183"
               target="_blank"
               rel="noopener noreferrer"
               className="block px-3 py-2 rounded-md text-base font-medium text-brand-text hover:bg-brand-card hover:text-[#25D366] flex items-center gap-2"

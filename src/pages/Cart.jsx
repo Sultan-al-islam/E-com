@@ -1,11 +1,19 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import { FiTrash2, FiMinus, FiPlus, FiArrowRight } from 'react-icons/fi';
 import { FaWhatsapp } from 'react-icons/fa';
 import { useCart } from '../context/CartContext';
 
 const Cart = () => {
   const { cart, removeFromCart, updateQuantity, subtotal } = useCart();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (cart.length === 0) {
+      navigate('/');
+    }
+  }, [cart.length, navigate]);
+
   const [formData, setFormData] = useState({
     name: '', phone: '', address: ''
   });
@@ -28,24 +36,12 @@ const Cart = () => {
     });
     orderDetails += `\nSubtotal: ৳${subtotal}\nDelivery: ৳${deliveryCharge}\n*Total: ৳${total}*\nMethod: Cash on Delivery`;
 
-    const whatsappUrl = `https://wa.me/1234567890?text=${encodeURIComponent(orderDetails)}`;
+    const whatsappUrl = `https://wa.me/8801621987183?text=${encodeURIComponent(orderDetails)}`;
     window.open(whatsappUrl, '_blank');
   };
 
-  if (cart.length === 0) {
-    return (
-      <div className="min-h-[60vh] flex flex-col items-center justify-center bg-brand-bg text-brand-text py-20">
-        <div className="w-24 h-24 bg-brand-card rounded-full flex items-center justify-center mb-6 border border-brand-accent/20 text-brand-accent">
-          <FiShoppingCart size={40} className="text-brand-accent" />
-        </div>
-        <h2 className="text-2xl font-bold mb-4">Your cart is empty</h2>
-        <p className="text-brand-muted mb-8">Looks like you haven't added anything yet.</p>
-        <Link to="/shop" className="px-8 py-3 bg-brand-accent text-brand-bg font-bold rounded-md hover:bg-[#00b3d6] transition-colors">
-          Start Shopping
-        </Link>
-      </div>
-    );
-  }
+  if (cart.length === 0) return null;
+
 
   return (
     <div className="bg-brand-bg min-h-screen py-10">
